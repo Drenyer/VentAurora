@@ -1,0 +1,21 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{%static 'DiseñoTemplates/estiloC4.css'  %}">
+
+<div class="resultado">
+    <h1>Resultado de la Consulta</h1>
+    <p>Usuarios Encontrados</p>
+    <label id="milabel">
+        <ul class="sin-vineta">
+            {% for user_id, user_data in encontrados.items %}
+            <li>Usuario ID: {{ user_id }}</li>
+            <li>Email: {{ user_data.email }}</li>
+            <li>Contraseña: {{ user_data.contraseña }}</li>
+            {% endfor %}
+        </ul>
+    </label>
+    <p>Gracias por utilizar nuestro servicio.</p>
+    <button class="btn-atras" onclick="window.history.back()">Atrás</button>
+</div>
+{% endblock %}

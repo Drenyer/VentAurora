@@ -1,0 +1,114 @@
+{% load static %}
+
+<link href="{%static 'DiseñoTemplates/estiloS.css'  %}" rel="stylesheet">
+
+<input type="checkbox" name="shownav" id="shownav">
+<label for="shownav" id="menu_button"></label>
+<nav>
+    <input type="radio" name="slide" id="s1">
+    <input type="radio" name="slide" id="s2">
+    <input type="radio" name="slide" id="s3">
+
+    <div class="wrapper">
+        <div class="left">
+        </div>
+        <div class="right">
+            <div class="navigation">
+
+                <div><label for="s1">Historia</label></div>
+                <div class="spacer"></div>
+                <div><label for="s2">Visión</label></div>
+                <div class="spacer"></div>
+                <div><label for="s3">Misión</label></div>
+                <div class="spacer"></div>
+
+                <a href="{% url 'Presentacion:inicio'%}" style="text-decoration: none;">
+                    <div class="explore">
+                        +GRUPO03
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="images">
+        <div class="p1">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="1">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="2">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="3">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="4">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="5">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="6">
+        </div>
+        <div class="p2">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="9">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="10">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="11">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="12">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="13">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="14">
+        </div>
+        <div class="p3">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="9">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="10">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="11">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="12">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="13">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/98/41/68/1000_F_598416855_XIHFOK23D5VzdcXla6Sx4VLidBANE0F1.jpg"
+                alt="14">
+        </div>
+    </div>
+    <div class="mensaje1">
+        <div>
+            Somos un grupo de estudio en la institución TECSUP, dedicados al desarrollo y construcción de software.
+            Nos unimos con el fin de generar un proyecto capaz de ser innovador y representar un avance para la
+            sociedad
+            de nuestro país. Nuestra visión es crear soluciones tecnológicas que no solo resuelvan problemas
+            complejos,
+            sino que también sean accesibles y fomenten la inclusión digital.
+        </div>
+    </div>
+    <div class="mensaje2">
+        <div>
+            Nuestra misión es elevar la calidad de vida de los conductores, ofreciendo un sistema avanzado y
+            ergonómico para
+            la regulación de la temperatura. Nos esforzamos por garantizar un entorno de conducción óptimo, donde
+            cada jornada
+            laboral se desarrolle bajo condiciones térmicas ideales, contribuyendo así al bienestar y a la seguridad
+            vial.
+        </div>
+    </div>
+    <div class="mensaje3">
+        <div>
+            Aspiramos a ser pioneros en la innovación de tecnologías de confort térmico, revolucionando la
+            experiencia al volante.
+            Nuestro objetivo es liderar el mercado con soluciones que no solo mejoren la comodidad de los
+            conductores, sino que
+            también fomenten un entorno laboral más saludable y productivo. Estamos comprometidos a transformar cada
+            viaje en una
+            experiencia agradable, marcando la diferencia en la vida diaria de nuestros usuarios.
+        </div>
+    </div>
+    <div class="bottomNote">
+        <div>
+            CONOCE MÁS SOBRE NOSOTROS
+        </div>
+    </div>
+
+</nav>

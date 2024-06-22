@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Aurora</title>
+	<link href="{% static 'DiseñoTemplates/estiloB.css' %}" rel="stylesheet"> <!-- Enlace al archivo CSS de estilos -->
+	<link rel="icon" type="image/jpg" href="{% static 'img/moon.png' %}"> <!-- Icono de la pestaña del navegador -->
+</head>
+
+<body>
+	<header>
+		<div class="container-hero">
+			<div class="container hero">
+				<!-- Sección de soporte al cliente -->
+				<div class="customer-support">
+					<i class="fa-solid fa-headset" style="color: rgba(150, 143, 143, 0.822);"></i>
+					<div class="content-customer-support">
+						<span class="text" style="color: #ffffff;">Soporte al cliente</span>
+						<a href="https://wa.link/2dsfgq" style="text-decoration: none;"><span
+								class="number" style="color: #626B92;">976739455</span></a>
+					</div>
+				</div>
+
+				<!-- Logo y nombre del sitio -->
+				<div class="container-logo">
+					<i class="fa-solid fa-moon" style="color: rgba(150, 143, 143, 0.822);"></i>
+					<h1 class="logo"><a href="/" style="color: #ffffff;">Aurora</a></h1>
+				</div>
+
+				<!-- Enlace al inicio de sesión -->
+				<div class="container-user">
+					<a href="{% url 'Presentacion:Isession' %}"><i class="fa-solid fa-user" style="color: rgba(150, 143, 143, 0.822);"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Barra de navegación -->
+		<div class="container-navbar">
+			<nav class="navbar container">
+				<i class="fa-solid fa-bars" style="color: rgba(34, 3, 3, 0.822);"></i>
+				<ul class="menu">
+					<!-- Opciones del menú -->
+					<li><a href="{% url 'Presentacion:inicio' %}">Inicio</a></li>
+					<li><a href="{% url 'Presentacion:sobre' %}">Sobre Nosotros</a></li>
+					<li><a href="{% url 'Presentacion:contacto' %}">Contacto</a></li>
+					<li><a href="{% url 'Presentacion:datos' %}">Datos</a></li>
+					<li><a href="{% url 'Presentacion:consultas' %}">Más</a></li>
+				</ul>
+
+				<!-- Formulario de búsqueda -->
+				<form class="search-form">
+					<input type="search" placeholder="Buscar..." />
+					<button class="btn-search">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Apartado para colocar bloques de codigo en otras plantillas -->
+	<div>
+		<section>
+			<div>
+				{% block content %}
+				{% endblock %}
+			</div>
+		</section>
+	</div>
+
+	<script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script> <!-- Script para FontAwesome -->
+</body>
+
+</html>

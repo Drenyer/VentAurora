@@ -1,0 +1,112 @@
+
+body {
+    background-color: #272E47;
+}
+
+.wrapper {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.title{
+    text-align: center;
+	font-weight: 500;
+	font-size: 3rem;
+    margin-top: 45px;
+}
+
+.vista {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start; 
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #3E4364;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+    color: #EDAA71;
+    font-size: 11px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url("https://i.ibb.co/PYPhyBf/yodefinitvio.png");
+}
+.card[for="c2"] {
+    background-image: url('https://i.pinimg.com/564x/06/be/55/06be554af136bb5c709e1cd33a8c3cb2.jpg');
+}
+.card[for="c3"] {
+    background-image: url('https://i.pinimg.com/564x/1c/b0/62/1cb0625939299a49bc502df2770d966a.jpg');
+}
+.card[for="c4"] {
+    background-image: url('https://i.pinimg.com/736x/2f/71/fd/2f71fdb4ea2c6f9dced36b5e66612da5.jpg');
+}
+.card[for="c5"] {
+    background-image: url('https://i.pinimg.com/736x/d7/6f/16/d76f168475e930eed0aa648c843aa999.jpg');
+}
+

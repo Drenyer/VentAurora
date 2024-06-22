@@ -1,0 +1,83 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{%static 'DiseñoTemplates/estiloCA.css'  %}">
+
+<nav class="vertical-nav">
+    <ul>
+        <li><a href="#" onclick="mostrarFuncionalidad('consulta1')">Tiempo Acumulado por usuario</a></li>
+        <li><a href="##" onclick="mostrarFuncionalidad('consulta2')">Cantidad de prodcutos por usuario</a></li>
+        <li><a href="###" onclick="mostrarFuncionalidad('consulta3')">Top 3 usuarios con más tiempo</a></li>
+        <li><a href="####" onclick="mostrarFuncionalidad('consulta4')">Buscar usuarios</a></li>
+        <li><a href="#####" onclick="mostrarFuncionalidad('consulta5')">Usuarios con productos registrados</a></li>
+    </ul>
+</nav>
+
+<div class="consultas">
+    <div id="consulta1" class="funcionalidad">
+        <form method="post" action="{% url 'Presentacion:consultaTiempo'%}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>Ingrese el nombre del usuario</label>
+                <input type="text" name="usuario" placeholder="Ingrese Usuario">
+            </div>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+
+    <div id="consulta2" class="funcionalidad">
+        <form method="post" action="{% url 'Presentacion:consultaCantidad'%}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>Ingrese el nombre del usuario</label>
+                <input type="text" name="usuario" placeholder="Ingrese Usuario">
+            </div>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+
+
+    <div id="consulta3" class="funcionalidad">
+        <form method="post" action="{% url 'Presentacion:consultaHoras'%}">
+            {% csrf_token %}
+            <label>Personas con más horas</label>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+
+    <div id="consulta4" class="funcionalidad">
+        <form method="post" action="{% url 'Presentacion:consultaBuscar'%}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>Buscar Usuarios ingrese min 3 caracteres</label>
+                <input type="text" name="usuario" placeholder="Ingrese Usuario">
+            </div>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+
+    <div id="consulta5" class="funcionalidad">
+        <form method="post" action="{% url 'Presentacion:ConsultaUPR'%}">
+            {% csrf_token %}
+            <label>Usuarios con productos registrados</label>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+
+</div>
+
+
+<script>
+    function mostrarFuncionalidad(id) {
+        var funcionalidades = document.getElementsByClassName('funcionalidad');
+        for (var i = 0; i < funcionalidades.length; i++) {
+            if (funcionalidades[i].id !== id) {
+                funcionalidades[i].style.display = 'none'; // Ocultar otros elementos
+            }
+        }
+        var funcionalidad = document.getElementById(id);
+        funcionalidad.style.display = 'block'; // Mostrar el elemento objetivo
+    }
+</script>
+
+{% endblock %}

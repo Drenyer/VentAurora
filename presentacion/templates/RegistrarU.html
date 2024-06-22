@@ -1,0 +1,33 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+<link href="{%static 'DiseñoTemplates/estiloR.css'  %}" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<form class="sesion" action="{% url 'Presentacion:registrarUBD' %}" method="post">
+    {% csrf_token %}
+    <h1 class="title">Registro Usuario</h1>
+    <label>
+        <i class="fa-solid fa-envelope"></i>
+        <input placeholder="Ingrese Correo" type="email" name="correo1" required>
+    </label>
+    <label>
+        <i class="fa-solid fa-user"></i>
+        <input placeholder="Ingrese Usuario" type="text" name="usuario1" required>
+    </label>
+    <label>
+        <i class="fa-solid fa-lock"></i>
+        <input placeholder="Confirme la contraseña" type="password" name="contraseña1" required>
+    </label>
+    <label>
+        <i class="fa-solid fa-lock"></i>
+        <input placeholder="Ingrese la contraseña" type="password" name="contraseña2" required>
+    </label>
+    <a style="color: #626B91;" href="https://wa.link/2dsfgq" class="link">¿Olvidaste tu cuenta?</a>
+
+    <button type="submit" id="button" class="bton">Registrar</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+/* Estilo para el contenedor del resultado */
+body{
+    background-color: #243349;
+}
+.resultado {
+    background-color: #3E4364;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 100px auto;
+    box-sizing: border-box;
+}
+
+/* Estilo para el título */
+.resultado h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Estilo para los párrafos */
+.resultado p {
+    font-size: 18px;
+    color: #626B92;
+    margin: 10px 0;
+}
+
+/* Estilo para el label */
+#milabel {
+    display: block;
+    margin: 20px 0;
+    font-size: 19px;
+    color: #9e9898;
+}
+
+/* Estilo para el botón */
+.btn-atras {
+    background-color: #EDAA71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Estilo adicional para le botón*/
+.btn-atras:hover {
+    background-color: #c79468;
+}
+
+.sin-vineta {
+    list-style-type: none; /* Elimina las viñetas */
+    padding-left: 0; /* Elimina el espacio a la izquierda */
+}

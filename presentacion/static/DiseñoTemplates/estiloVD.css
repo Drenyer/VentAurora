@@ -1,0 +1,107 @@
+body{
+  background-color: #272E47;
+}
+.ContenedorP {
+  
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  
+  font-family: 'Roboto', sans-serif;
+}
+
+.titulo {
+  text-transform: uppercase;
+  text-align: center;
+  /* Center alignment remains */
+  color: #3E4364;
+  /* Dark text color preserved */
+  font-family: 'Roboto', sans-serif;
+  /* Modern font choice */
+  font-size: 45px;
+  /* Slightly reduced font size for responsiveness */
+  font-weight: 300;
+  /* Lighter weight for a cleaner look */
+  letter-spacing: 2px;
+  /* Add subtle letter spacing for better readability */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  /* Subtle text shadow for depth */
+  font-weight: bold;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  /* Color de texto grisáceo */
+  margin-bottom: 20px;
+}
+
+/* Estilos para la tabla */
+.tabla-clientes {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.encabezado {
+  background-color: #3E4364;
+  /* Color de fondo azul */
+  color: rgb(253, 253, 253);
+}
+
+.encabezado th {
+  padding: 15px;
+  text-align: center;
+  /* Alineación de texto a la izquierda */
+  border-bottom: 2px solid #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+  color: #EDAA71;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+}
+
+/* Estilo para las filas pares (alternas) */
+tr:nth-child(even) {
+  background-color: #4B5270;
+  /* Color de fondo gris claro */
+}
+
+
+.Actualizar,
+.Borrar {
+  background-color: #626B91;
+  /* Color verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Indicador de cursor en mano */
+  margin: 5px 0;
+  /* Margen inferior */
+  transition: background-color 0.3s;
+  /* Animación de cambio de color */
+}
+
+.Actualizar:hover {
+  /* Efecto hover para el botón "Actualizar" */
+  background-color: #b0d65e;
+  /* Verde más oscuro */
+}
+
+.Borrar:hover {
+  /* Efecto hover para el botón "Borrar" */
+  background-color: #dc3545;
+  /* Rojo */
+}

@@ -1,0 +1,278 @@
+{% extends 'Base.html' %}
+{%load static%}
+{%block content%}
+<link href="{%static 'DiseñoTemplates/estiloB.css'%}" rel="stylesheet">
+<section class="banner">
+    <div class="content-banner">
+        <p>Refrigerante Innovador</p>
+        <h2>100% Eficiencia <br />Refrigeración Avanzada</h2>
+        <a href="#" style="background-color: #EDAA71;">Descubrir más</a>
+    </div>
+</section>
+
+<main class="main-content">
+    <section class="container container-features">
+        <div class="card-feature">
+            <i class="fa-solid fa-thermometer-half"></i>
+            <div class="feature-content">
+                <span>Rendimiento Óptimo</span>
+                <p>Óptimo bajo condiciones extremas</p>
+            </div>
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-leaf"></i>
+            <div class="feature-content">
+                <span>Eco-Amigable</span>
+                <p>No tóxico y reciclable</p>
+            </div>
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-wrench"></i>
+            <div class="feature-content">
+                <span>Fácil Instalación</span>
+                <p>Diseño adaptable</p>
+            </div>
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-headset"></i>
+            <div class="feature-content">
+                <span>Servicio al cliente 24/7</span>
+                <p>LLámenos 24/7 al 976739455</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="container top-products">
+        <h1 class="heading-1" style="color: #ffffff;">Mejores Productos</h1>
+
+        <div class="container-options">
+            <span class="active" style="background-color: #EDAA71;">Innovación Tecnologica</span>
+            
+        </div>
+
+        <div class="container-products">
+            <!-- Producto 1 -->
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="{% static 'img/1.jpg'%}" alt="Cafe Irish" />
+                    <span class="discount">-13%</span>
+                    <div class="button-group">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Aurora</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">$4.60 <span>$5.30</span></p>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="{% static 'img/2.jpg'%}" alt="Cafe incafe-ingles.jpg" />
+                    <span class="discount">-22%</span>
+                    <div class="button-group">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Respaldo Completo XV</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">$5.70 <span>$7.30</span></p>
+                </div>
+            </div>
+            <!-- producto 3 -->
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="{% static 'img/3.jpg'%}" alt="Cafe Australiano" />
+                    <div class="button-group">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Respaldo de Hombros</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">$3.20</p>
+                </div>
+            </div>
+            <!-- producto 3 -->
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="{% static 'img/4.jpg'%}" alt="Cafe Helado" />
+                    <div class="button-group">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Respaldo bajo</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">$5.60</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <img src="{% static 'img/6.jpg'%}" alt="Gallery Img1" class="gallery-img-1" /><img
+            src="{% static 'img/7.jpg'%}" alt="Gallery Img2" class="gallery-img-2" /><img
+            src="{% static 'img/tecsup.jpg'%}" alt="Gallery Img3" class="gallery-img-3" /><img
+            src="{% static 'img/hojsa.jpg'%}" alt="Gallery Img4" class="gallery-img-4" /><img
+            src="{% static 'img/ola.jpg'%}" alt="Gallery Img5" class="gallery-img-5" />
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container container-footer">
+        <div class="menu-footer">
+            <div class="contact-info">
+                <p class="title-footer">Información de Contacto</p>
+                <ul>
+                    <li>
+                        Dirección: José Luis Bustamante y Rivero 04009
+                    </li>
+                    <li>Teléfono: (054)426610</li>
+                    <li>Fax: 55555300</li>
+                    <li>EmaiL: franco.mamani@tecsup.edu.pe</li>
+                </ul>
+                <div class="social-icons">
+                    <span class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </span>
+                    <span class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </span>
+                    <span class="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </span>
+                    <span class="pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </span>
+                    <span class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="information">
+                <b class="title-footer">Información</b>
+                <ul>
+                    <li>
+                        Somos un grupo de estudio de la carrera de Desarrollado de Software
+                        nos propusimos en armar una pagina web que puede ser del agrado de
+                        las personas.
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="my-account">
+                <b class="title-footer">Mi objetivo</b>
+                <ul>
+                    <p>
+                        La vida es dinámica, y tus objetivos pueden evolucionar con
+                        el tiempo. Lo importante es mantener un enfoque en lo que te apasiona
+                        y en lo que puedes hacer para tener un impacto positivo en el mundo.
+                    </p>
+
+
+                </ul>
+
+
+            </div>
+
+            <div class="newsletter">
+                <b class="title-footer">Boletín informativo</b>
+
+                <div class="content">
+                    <p>
+                        Suscríbete a nuestros boletines ahora y mantente al
+                        día con nuevas colecciones y ofertas exclusivas.
+                    </p>
+                    <input type="email" placeholder="Ingresa el correo aquí..." style="border-radius: 3px; background-color: rgba(240, 248, 255, 0.382); color: rgb(253, 253, 253);
+                    padding-top: 10px; text-align: center;
+                    ">
+                    <button>Suscríbete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>
+                Desarrollado por Franco Nilver Mamani Mamani &copy; 2024
+            </p>
+
+            <img src="{% static 'img/payment.png'%}" alt="Pagos">
+        </div>
+    </div>
+</footer>
+{% endblock %}

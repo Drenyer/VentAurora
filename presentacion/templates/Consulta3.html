@@ -1,0 +1,19 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{%static 'DiseñoTemplates/estiloC3.css'  %}">
+
+<div class="resultado">
+    <h1>Resultado de la Consulta</h1>
+    <p>Top 3 Usuarios con Mayor Tiempo</p>
+    <label id="milabel">
+        <ul class="sin-vineta">
+            {% for usuario, tiempo in top_3_usuarios %}
+            <li>Usuario: {{ usuario }}, Tiempo: {{ tiempo }}</li>
+            {% endfor %}
+        </ul>
+    </label>
+    <p>Gracias por utilizar nuestro servicio.</p>
+    <button class="btn-atras" onclick="window.history.back()">Atrás</button>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static 'DiseñoTemplates/estiloVD.css'  %}" rel="stylesheet">
+
+<div class="ContenedorP">
+    <h1 class="titulo">Clientes Premium</h1>
+    <h2>{{ mensaje }}</h2>
+    <table class="tabla-clientes">
+        <thead>
+            <tr class="encabezado">
+                <th>Usuario</th>
+                <th>Correo</th>
+                <th>Contraseña</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in results %}
+            <tr>
+                <td>{{ data.0 }}</td>
+                <td>{{ data.1 }}</td>
+                <td>{{ data.2 }}</td>
+                <td>
+                    <form method="post" action="{% url 'Presentacion:iractualizar' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="usuario_id" value="{{ data.0 }}">
+                        <button type="submit" class="Actualizar">Actualizar</button>
+                    </form>
+                    <form method="post" action="{% url 'Presentacion:eliminarUBD' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="usuario_id" value="{{ data.0 }}">
+                        <button type="submit" class="Borrar">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</div>
+
+{% endblock %}
